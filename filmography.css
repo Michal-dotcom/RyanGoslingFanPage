@@ -1,0 +1,89 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  background-image: url("filmographyGoose.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: center;
+
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 200px;
+}
+#background-image {
+  opacity: 0.1;
+}
+.nav nav-item {
+	display: inline-flex;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+.quote h3{
+	position: center;
+}
+.container {
+	height: 100%;
+	background-color: hsla(38, 76%, 52%, 0.68);
+	opacity: 0.75;
+	flex: center;
+	flex-wrap: column;
+}
+
+.filmography-title h1 {
+	font-size: 25px;
+	font-weight: bold;
+   box-shadow:
+        -1px 0px 0px 0px #000,
+        0px -1px 0px 0px #000,
+        0px 1px 0px 0px #000,
+        1px 1px 0px 0px #000
+}
+
+* {margin: 0; padding: 0;}
+ 
+div {
+  margin: 20px;
+}
+ 
+ol {
+  list-style-type: none;
+  width: 500px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+li {
+  background-color: grey;
+  opacity: 0,01;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+  overflow: auto;
+  border-radius: 15px 50px 30px 5px;
+  background: grey;
+  padding: 20px;
+  width: 500px;
+  height: 250px;
+}
+ 
+li:hover {
+  margin-bottom: 2px;
+  background: orangered;
+  cursor: pointer;
+}
+a {
+  color: black;
+
+}

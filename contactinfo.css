@@ -1,0 +1,98 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  background-image: url(contactGoose.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: center;
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 200px;
+}
+background-image {
+	opacity: 0.2;
+}
+.nav nav-item {
+	display: inline-flex;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+.quote h3{
+	position: center;
+}
+.container {
+	
+	height: 100%;
+	
+	background-color: hsla(38, 76%, 52%, 0.68);
+	opacity: 0.75;
+	flex: center;
+	flex-wrap: column;
+}
+.container a {
+	display: block;
+    margin-top: 35px;
+    margin-right: 5px;
+}
+img {
+	flex-wrap: column;
+	flex: center;
+	width: 300px;
+	height: 200px;
+}
+.jumbotron h1 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 20px;
+}
+p {
+	font-size: 25px;
+	color: cyan;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+img {
+	max-height: 100px;
+	max-width: 100px;
+	position: relative;
+	left: 200px;
+}
+ul {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 400px;
+}
+
+/* List element */
+li {
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}

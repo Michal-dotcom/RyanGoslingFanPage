@@ -1,0 +1,50 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  background-image: url("husbando.webp");
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: center;
+  width: 500px;
+  height: 500px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 200px;
+}
+.nav nav-item {
+	display: inline-flex;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+.dropdown-item {
+	margin: 10px 10px;
+}
+.container {
+	object-fit: fill;
+	height: 100%;
+	width: 10%;
+	background-color: hsla(38, 76%, 52%, 0.68);
+	opacity: 0.75;
+	flex: center;
+	flex-wrap: column;
+}
+.container a {
+	display: block;
+    margin-top: 35px;
+    margin-right: 5px;
+}
+img {
+	flex-wrap: column;
+	flex: center;
+	width: 300px;
+	height: 200px;
+}
+.jumbotron h1 {
+	font-size: 35px;
+}
+.quote h3 {
+	font-size: 20px;
+	object-position: 50% 50%;
+}
+
